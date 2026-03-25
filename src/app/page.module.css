@@ -1,0 +1,169 @@
+.hero {
+  position: relative;
+  height: 600px;
+  background-image: url('/images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroContent {
+  text-align: center;
+  color: var(--white);
+  padding: 2rem;
+  max-width: 800px;
+}
+
+.heroContent h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.intro {
+  padding: 4rem 0;
+  background-color: var(--light-bg);
+}
+
+.about {
+  padding: 4rem 0;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.aboutText h2 {
+  color: var(--primary-green);
+  margin-bottom: 1.5rem;
+}
+
+.aboutImage {
+  width: 100%;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, var(--primary-green), #4a7329);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.reviews {
+  padding: 4rem 0;
+  background-color: var(--light-bg);
+}
+
+.reviewsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.reviewCard {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviewText {
+  font-style: italic;
+  color: var(--text-gray);
+  margin-bottom: 1rem;
+}
+
+.reviewAuthor {
+  font-weight: 600;
+  color: var(--primary-green);
+}
+
+.cta {
+  padding: 4rem 0;
+  background-color: var(--primary-green);
+  color: var(--white);
+  text-align: center;
+}
+
+.cta h2 {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.ctaButton {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  background-color: var(--white);
+  color: var(--primary-green);
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 400px;
+  }
+
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .aboutGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .reviewsGrid {
+    grid-template-columns: 1fr;
+  }
+}

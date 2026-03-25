@@ -1,0 +1,85 @@
+.pageHeader {
+  background: linear-gradient(135deg, var(--primary-green), #4a7329);
+  color: var(--white);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.pageHeader h1 {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.pageHeader p {
+  font-size: 1.2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.menuSection {
+  padding: 4rem 0;
+}
+
+.menuIntro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  font-size: 1.1rem;
+}
+
+.menuCategory {
+  margin-bottom: 3rem;
+}
+
+.menuCategory h2 {
+  color: var(--primary-green);
+  border-bottom: 2px solid var(--primary-green);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.categoryDescription {
+  color: var(--text-gray);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  background-color: var(--light-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-green);
+  margin-top: 1rem;
+}
+
+.highlight p {
+  margin-bottom: 0.8rem;
+}
+
+.highlight strong {
+  color: var(--primary-green);
+}
+
+.menuNote {
+  background-color: var(--primary-green);
+  color: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.menuNote h3 {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .pageHeader {
+    padding: 3rem 0;
+  }
+}

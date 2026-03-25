@@ -1,0 +1,128 @@
+.pageHeader {
+  background: linear-gradient(135deg, var(--primary-green), #4a7329);
+  color: var(--white);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.pageHeader h1 {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.pageHeader p {
+  font-size: 1.2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.content {
+  padding: 4rem 0;
+}
+
+.intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.intro h2 {
+  color: var(--primary-green);
+  margin-bottom: 1.5rem;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.highlightCard {
+  background-color: var(--light-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.highlightCard h3 {
+  color: var(--primary-green);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.highlightCard p {
+  line-height: 1.6;
+}
+
+.reservationBox {
+  background-color: var(--primary-green);
+  color: var(--white);
+  padding: 3rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.reservationBox h3 {
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.reservationBox p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.contactInfo {
+  margin: 2rem 0;
+  font-size: 1.1rem;
+}
+
+.contactInfo p {
+  margin-bottom: 0.5rem;
+}
+
+.reserveButton {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 1rem 2.5rem;
+  background-color: var(--white);
+  color: var(--primary-green);
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reserveButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.note {
+  text-align: center;
+  color: var(--text-gray);
+  font-style: italic;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .pageHeader {
+    padding: 3rem 0;
+  }
+
+  .highlights {
+    grid-template-columns: 1fr;
+  }
+}
