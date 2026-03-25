@@ -15,7 +15,7 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -32,14 +32,25 @@
 }
 
 .menuCategory {
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
 
 .menuCategory h2 {
   color: var(--primary-green);
   border-bottom: 2px solid var(--primary-green);
   padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.categorySubtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-gray);
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 .categoryDescription {
@@ -48,23 +59,87 @@
   margin-bottom: 1.5rem;
 }
 
-.highlight {
-  background-color: var(--light-bg);
-  padding: 1.5rem;
-  border-radius: 8px;
-  border-left: 4px solid var(--primary-green);
-  margin-top: 1rem;
+.menuItems {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
-.highlight p {
-  margin-bottom: 0.8rem;
+.menuItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e8e8e8;
+  gap: 1rem;
 }
 
-.highlight strong {
+.menuItem:last-child {
+  border-bottom: none;
+}
+
+.menuItemInfo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.menuItemName {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.menuItemDesc {
+  color: var(--text-gray);
+  font-size: 0.88rem;
+  margin-top: 0.2rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.menuItemPrice {
+  font-weight: 700;
   color: var(--primary-green);
+  white-space: nowrap;
+  font-size: 1rem;
+  min-width: 60px;
+  text-align: right;
+}
+
+.menuItemGroup {
+  margin-bottom: 1.5rem;
+}
+
+.menuItemGroupTitle {
+  display: block;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--text-dark);
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
 }
 
 .menuNote {
+  background-color: var(--light-bg);
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  border-left: 4px solid var(--primary-green);
+  margin-top: 1.25rem;
+}
+
+.menuNote p {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+
+.menuNote p:last-child {
+  margin-bottom: 0;
+}
+
+.menuClosingNote {
   background-color: var(--primary-green);
   color: var(--white);
   padding: 2rem;
@@ -73,7 +148,7 @@
   text-align: center;
 }
 
-.menuNote h3 {
+.menuClosingNote h3 {
   color: var(--white);
   margin-bottom: 1rem;
 }
@@ -81,5 +156,17 @@
 @media (max-width: 768px) {
   .pageHeader {
     padding: 3rem 0;
+  }
+
+  .menuCategory h2 {
+    font-size: 1.3rem;
+  }
+
+  .menuItemName {
+    font-size: 0.95rem;
+  }
+
+  .menuItemPrice {
+    font-size: 0.95rem;
   }
 }
